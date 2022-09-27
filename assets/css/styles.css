@@ -1,0 +1,154 @@
+body {
+    background-color: #D8DFE8;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.button {
+    align-items: center;
+    border-radius: 20px;
+    font-size: 16px;
+    height: 50px;
+    margin-top: 1em;
+    width:  12em;
+}
+
+/* Header */
+#logo {
+    width: 1.5em;
+}
+
+/* Main */
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 75vh;
+}
+
+/* Start Screen */
+
+#start-screen {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#button-start {
+    background-color: #0A3871;
+    color: white;
+    height: 75px;
+    width: 14em;
+}
+
+#button-add {
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+/* Add Screen */
+
+#add-screen {
+    display: none;
+    width: 35%;
+}
+
+#textarea {
+    color: #0A3871;
+    font-size: 20px;
+    font-weight: 400;
+    height: 8em;
+    resize: none;
+}
+
+#textarea::placeholder {
+    color: #0A3871;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#textarea:focus {
+    outline: none !important;
+}
+
+
+.paragraph-info {
+    color: #495057;
+    font-size: .8em;
+    margin: 0;
+}
+
+
+#buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#button-save {
+    background-color: #0A3871;
+    color: white;
+    width: 16em;
+}
+
+#button-cancel {
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    width: 16em;
+}
+
+/* Game Screen */
+
+#game-screen {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 50%;
+}
+
+
+
+
+
+/* Footer */
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6em;
+}
+
+
+/* Media Queries */
+@media(min-width: 583px) {
+    #textarea {
+        height: 12em;
+    }
+}
+
+@media(min-width: 992px) {
+    #textarea {
+        height: 18em;
+    }
+
+    #message-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #dummy {
+        display: initial;
+        width: 15em;
+    }
+}
